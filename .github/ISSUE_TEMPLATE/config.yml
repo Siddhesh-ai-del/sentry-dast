@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Discussions
+    url: https://github.com/Siddhesh-ai-del/sentry-dast/issues
+    about: Use issues for tracked questions and proposals during the pre-release phase.
+  - name: Security advisories
+    url: https://github.com/Siddhesh-ai-del/sentry-dast/security/advisories/new
+    about: Report security vulnerabilities privately.

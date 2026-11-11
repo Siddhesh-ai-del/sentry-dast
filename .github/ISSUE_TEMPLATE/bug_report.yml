@@ -1,0 +1,70 @@
+name: Bug report
+description: Report a problem to help improve sentry-dast
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to report a bug. Please redact secrets, tokens, credentials, and sensitive data before submitting.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pre-submission checks
+      options:
+        - label: I searched existing issues and did not find a duplicate.
+          required: true
+        - label: I have removed secrets, tokens, and credentials from all attachments and logs.
+          required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear description of the problem.
+      placeholder: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Provide steps so the issue can be reproduced.
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What actually happened.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include relevant environment details.
+      placeholder: |
+        - OS:
+        - Python version:
+        - sentry-dast version/commit:
+        - Relevant configuration:
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs and additional context
+      description: Add redacted logs or screenshots if helpful.
+    validations:
+      required: false

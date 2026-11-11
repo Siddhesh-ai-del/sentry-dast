@@ -1,0 +1,52 @@
+name: Feature request
+description: Suggest an idea or improvement for sentry-dast
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the problem you want to solve before proposing a solution.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement
+      description: What problem or need does this request address?
+      placeholder: Describe the problem clearly.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the change you would like to see.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Describe any alternative solutions or approaches you considered.
+    validations:
+      required: false
+  - type: dropdown
+    id: principle
+    attributes:
+      label: Which principle does this advance?
+      description: Select the project principle most aligned with this request.
+      options:
+        - Verified findings over noisy output
+        - Safety and rules-of-engagement by design
+        - Deploy-triggered, change-aware testing
+        - Business-context relevance for B2B travel platforms
+        - Reproducible evidence and transparent reporting
+        - Other (explain in proposal)
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add any other context, references, or constraints.
+    validations:
+      required: false

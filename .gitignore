@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.venv/
+venv/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node (dashboard/tooling)
+node_modules/
+
+# Environment and credentials
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+credentials*.json
+secrets*.json
+*secret*
+*token*
+
+# IDE and OS
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Project artifacts
+.eos/memory/session/
+.deck_assets/
+*.sqlite
+*.db
+logs/
+coverage/
+
+# Playwright / browser artifacts
+playwright-report/
+test-results/
+blob-report/
+storage-state*.json
